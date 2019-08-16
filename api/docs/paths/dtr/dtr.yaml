@@ -1,0 +1,31 @@
+post:
+  summary: Record time-in/time-out of the user
+  x-swagger-router-controller: Controllers
+  operationId: logTime
+  parameters:
+    - in: body
+      name: body
+      description: Request body
+      required: true
+      schema:
+        type: object
+        properties:
+          empName:
+            type: string
+            description: Employee name
+  responses:
+    200:
+      description: employee logged time
+      schema:
+        $ref: '#/definitions/LogTimeSuccess'
+get:
+  summary: Get dtr logs
+  x-swagger-router-controller: Controllers
+  operationId: getLogs
+  responses:
+    200:
+      description: employee DTR logs
+      schema:
+        type: array
+        items:
+          $ref: '#/definitions/LogTimeSuccess'

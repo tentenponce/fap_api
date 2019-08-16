@@ -1,0 +1,23 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: DTR API
+host: localhost:10010
+basePath: /
+schemes:
+  - http
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /register:
+    $ref: ./api/docs/paths/register/register.yaml
+  /dtr:
+    $ref: ./api/docs/paths/dtr/dtr.yaml
+definitions:
+  RegisterSuccess:
+    $ref: ./api/docs/components/schemas/RegisterSuccess.yaml
+  LogTimeSuccess:
+    $ref: ./api/docs/components/schemas/LogTimeSuccess.yaml

@@ -1,0 +1,15 @@
+post:
+  summary: Register a user to be recognize
+  x-swagger-router-controller: Controllers
+  operationId: registerUser
+  consumes:
+    - multipart/form-data
+  parameters:
+    - in: formData
+      name: face
+      type: file
+  responses:
+    200:
+      description: success registration
+      schema:
+        $ref: '#/definitions/RegisterSuccess'

@@ -1,0 +1,13 @@
+type: object
+properties:
+  timeIn:
+    type: string
+    description: time in record
+  timeOut:
+    type: string
+    description: time out record
+  logDate:
+    type: string
+    description: date of log
+required:
+  - timeIn

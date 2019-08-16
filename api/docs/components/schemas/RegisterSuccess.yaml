@@ -1,0 +1,8 @@
+type: object
+properties:
+  message:
+    type: string
+    description: success message
+    default: Success registration
+required:
+  - message
